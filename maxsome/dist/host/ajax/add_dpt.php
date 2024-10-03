@@ -1,11 +1,12 @@
 <?php
 include "../config/controller.php";
-include "../config/checkers.php";
 $app = new controller;
 $dpt_name = $app->post_request('dpt');
+$abbr = $app->post_request('abbr');
+$dpt_head = $app->post_request('dpt_head');
 $formattedDate = date('Y-m-d H:i:s');
 if (isset($dpt_name)) {
-    $query = "INSERT INTO `hmo_profiles` (`id`, `hmo_id`, `profile_name`, `status`, `date_created`) VALUES (NULL, '$hmo_key', '$dpt_name', '1', '$formattedDate')";
+    $query = "INSERT INTO `department` (`id`, `department_name`, `date_created`, `status`, `leader`,`abbr`) VALUES (NULL, '$dpt_name', '$formattedDate', '1', '$dpt_head','$abbr')";
     $get_category = $app->direct_insert($query);
     if ($get_category == "success") {
         echo "success";
