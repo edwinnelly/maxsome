@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 23, 2024 at 08:17 PM
+-- Generation Time: Oct 03, 2024 at 05:25 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -74,13 +74,18 @@ CREATE TABLE `appointment` (
 --
 
 INSERT INTO `appointment` (`id`, `pid`, `tittle`, `description`, `appointment_date`, `doc_id`, `dated`, `status`, `specialist_id`, `assigned_doc_id`, `payment_status`, `payment_type`, `hmo_id`) VALUES
-(46, 11919, 'the appropriate version for your operating system (Windows, macOS, Linux)', 'appropriate version for your operating system (Windows, macOS, Linux)', '2024-09-11 22:52:00', 8702, '2024-09-11 23:52:47', 2, 9, 40, 'notpaid', 'open', NULL),
-(47, 11919, 'will try to automatically detect the email settings for your provider. If it succeeds, you can click “Done” to finish the setup.', 'Thunderbird will try to automatically detect the email settings for your provider. If it succeeds, you can click “Done” to finish the setup.', '2024-09-11 22:55:00', 8702, '2024-09-11 23:55:41', 1, 11, 47, 'notpaid', 'open', NULL),
-(48, 11919, 'wqdqwdwqsqwsqw', 'wqwsqws wqsqwsqw', '2024-09-19 14:31:00', 8702, '2024-09-12 15:32:11', 0, 5, 37, 'notpaid', 'open', NULL),
-(49, 11919, 'ed we d ed qw dewwdd', 'ewdedqewd ew dwed', '2024-09-12 15:25:00', 8702, '2024-09-12 16:25:57', 0, 5, 37, 'notpaid', 'open', NULL),
-(50, 11919, 'wdqwdwqd qwd', 'dw. werwfef re. erfre', '2024-09-12 15:31:00', 8702, '2024-09-12 16:31:37', 0, 10, 36, 'notpaid', 'open', NULL),
-(51, 11919, 'ewdew d we d we we', 'ew dew d we dw ed w ed e d we d e', '2024-09-12 15:32:00', 8702, '2024-09-12 16:32:46', 0, 5, 37, 'notpaid', 'open', NULL),
-(52, 2, 'testing app', 'sending data top the patient', '2024-09-19 22:18:00', 8702, '2024-09-19 23:18:33', 0, 9, 37, 'notpaid', 'open', NULL);
+(46, 11919, 'the appropriate version for your operating system (Windows, macOS, Linux)', 'appropriate version for your operating system (Windows, macOS, Linux)', '2024-09-11 00:00:00', 8702, '2024-09-11 23:52:47', 2, 9, 40, 'notpaid', 'open', NULL),
+(47, 11919, 'will try to automatically detect the email settings for your provider. If it succeeds, you can click “Done” to finish the setup.', 'Thunderbird will try to automatically detect the email settings for your provider. If it succeeds, you can click “Done” to finish the setup.', '2024-09-11 00:00:00', 8702, '2024-09-11 23:55:41', 1, 11, 47, 'notpaid', 'open', NULL),
+(48, 11919, 'wqdqwdwqsqwsqw', 'wqwsqws wqsqwsqw', '2024-09-19 00:00:00', 8702, '2024-09-12 15:32:11', 0, 5, 37, 'notpaid', 'open', NULL),
+(49, 11919, 'ed we d ed qw dewwdd', 'ewdedqewd ew dwed', '2024-09-12 00:00:00', 8702, '2024-09-12 16:25:57', 0, 5, 37, 'notpaid', 'open', NULL),
+(50, 11919, 'wdqwdwqd qwd', 'dw. werwfef re. erfre', '2024-09-12 00:00:00', 8702, '2024-09-12 16:31:37', 0, 10, 36, 'notpaid', 'open', NULL),
+(51, 11919, 'ewdew d we d we we', 'ew dew d we dw ed w ed e d we d e', '2024-09-12 00:00:00', 8702, '2024-09-12 16:32:46', 0, 5, 37, 'notpaid', 'open', NULL),
+(52, 2, 'testing app', 'sending data top the patient', '2024-09-19 00:00:00', 8702, '2024-09-19 23:18:33', 0, 9, 37, 'notpaid', 'open', NULL),
+(53, 11919, 'testing qewfewfewf', 'testing  efwqwe ewqf we', '2024-09-24 00:00:00', 8702, '2024-09-24 21:34:56', 0, 5, 37, 'notpaid', 'open', NULL),
+(55, 11919, 'nnnnnk kjl j jk jk', 'mmmnn. jknkljn j', '2024-09-24 12:59:00', 8702, '2024-09-24 22:00:02', 0, 10, 37, 'notpaid', 'open', NULL),
+(56, 11919, 'his should work if the problem was due to the', 'his should work if the problem was due to the', '2024-09-24 13:03:00', 8702, '2024-09-24 22:04:01', 0, 11, 37, 'notpaid', 'open', NULL),
+(57, 11919, 'should work if the problem was due to the', 'work if the problem was due to the', '2024-09-24 13:06:00', 8702, '2024-09-24 22:07:05', 0, 5, 37, 'notpaid', 'open', NULL),
+(58, 11919, 'should work if the problem was due to the', 'work if the problem was due to the', '2024-09-24 13:12:00', 8702, '2024-09-24 22:12:09', 0, 11, 36, 'notpaid', 'open', NULL);
 
 -- --------------------------------------------------------
 
@@ -434,7 +439,14 @@ INSERT INTO `hmo_payment_requests` (`request_id`, `patient_id`, `hmo_id`, `servi
 (112, 7, 4, 36, '2024-09-01 13:20:07', NULL, 'paid', NULL, 0.00, '2024-09-01 13:20:07', '66d469fc9a55b'),
 (113, 7, 12, 21, '2024-09-01 13:20:07', NULL, 'paid', NULL, 0.00, '2024-09-01 13:20:07', '66d469fc9a55b'),
 (114, 7, 12, 13, '2024-09-01 13:20:07', NULL, 'pending', NULL, 0.00, '2024-09-01 13:20:07', '66d469fc9a55b'),
-(115, 7, 12, 18, '2024-09-01 13:20:07', NULL, 'pending', NULL, 0.00, '2024-09-01 13:20:07', '66d469fc9a55b');
+(115, 7, 12, 18, '2024-09-01 13:20:07', NULL, 'pending', NULL, 0.00, '2024-09-01 13:20:07', '66d469fc9a55b'),
+(116, 11919, 1, 11, '2024-09-27 05:47:19', NULL, 'pending', NULL, 0.00, '2024-09-27 05:47:19', '66f646b6a7b07'),
+(117, 11919, 1, 29, '2024-09-27 05:47:19', NULL, 'pending', NULL, 0.00, '2024-09-27 05:47:19', '66f646b6a7b07'),
+(118, 11919, 1, 36, '2024-09-27 05:47:19', NULL, 'pending', NULL, 0.00, '2024-09-27 05:47:19', '66f646b6a7b07'),
+(119, 11919, 1, 21, '2024-09-27 05:47:19', NULL, 'pending', NULL, 0.00, '2024-09-27 05:47:19', '66f646b6a7b07'),
+(120, 11919, 1, 18, '2024-09-27 05:47:19', NULL, 'pending', NULL, 0.00, '2024-09-27 05:47:19', '66f646b6a7b07'),
+(121, 11919, 1, 8, '2024-09-27 05:47:19', NULL, 'pending', NULL, 0.00, '2024-09-27 05:47:19', '66f646b6a7b07'),
+(122, 11919, 1, 24, '2024-09-27 05:47:19', NULL, 'pending', NULL, 0.00, '2024-09-27 05:47:19', '66f646b6a7b07');
 
 -- --------------------------------------------------------
 
@@ -545,7 +557,8 @@ INSERT INTO `hmo_request_window` (`id`, `title`, `request_key`, `date_added`, `p
 (11, 'loi', '66ce2b78f07bf', '2024-08-27 20:39:44', 2),
 (12, 'dw', '66ce2b949ecc7', '2024-08-27 20:40:13', 2),
 (13, 'test bill for john', '66d1a86b7d86c', '2024-08-30 12:10:04', 1234),
-(14, '43tfdgvfbggb', '66d469fc9a55b', '2024-09-01 14:20:07', 7);
+(14, '43tfdgvfbggb', '66d469fc9a55b', '2024-09-01 14:20:07', 7),
+(15, 'test class', '66f646b6a7b07', '2024-09-26 22:47:19', 11919);
 
 -- --------------------------------------------------------
 
@@ -1126,7 +1139,7 @@ CREATE TABLE `staffs_accounts` (
 --
 
 INSERT INTO `staffs_accounts` (`id`, `staff_id`, `username`, `firstname`, `lastname`, `age`, `qualification`, `department_id`, `occupation`, `sex`, `marital_status`, `phone`, `email_address`, `password`, `next_of_kin`, `religion`, `tribe`, `salary`, `state_of_origin`, `nationality`, `photo`, `specialist_id`, `access_level_id`, `date_added`, `address`, `login_sec`, `hmo_key`) VALUES
-(36, '8702', 'wilson_dickson', 'sunday', 'dickson', NULL, 'Radiograpy', 9, 'socium 123', 'Male', 'Single', '+234-344-333-231', 'diona@mail.com', '1234567', '', 'Islam', '', 1000001, 'River State', 'Nigeria', '88921024733051956647profilepicture-2-portrait-head.jpeg', 10, 1, '2024-03-04 19:08:43', NULL, 'e45221df59af107296903376401c9dd3af820446e82fbf6d8d99fa39703cc1e5', 4),
+(36, '8702', 'wilson_dickson', 'sunday', 'dickson', NULL, 'Radiograpy', 9, 'socium 123', 'Male', 'Single', '+234-344-333-231', 'diona@mail.com', '1234567', '', 'Islam', '', 1000001, 'River State', 'Nigeria', '88921024733051956647profilepicture-2-portrait-head.jpeg', 10, 1, '2024-03-04 19:08:43', NULL, 'bb8392f64fbf1bc6c8b5065f756026791cd54c18e4eb869ae73feb658796284f', 4),
 (37, '6968', 'Darlington4334', 'Darlington', 'Markswell', NULL, NULL, 9, NULL, 'Female', 'Divorced', '+133-344-333-234', 'markswql32@gmail.com', '$2y$10$17Gl9nwUUj0IvfX.dtD7/.ePRdVzkrPnrakBe4Kxeln7YNCyFXgoG', NULL, NULL, NULL, 0, NULL, NULL, '19263249508507174638profilepicture-2-portrait-head.jpeg', 11, 3, '2024-03-04 19:09:38', NULL, NULL, NULL),
 (38, '7103', 'jude230404', 'James', 'Judes', NULL, 'doc', 5, 'test', 'Male', 'Single', '+1-959-434-333', 'jude@gmail.com', '12345678', 'test1', 'Islam', 'test2', 0, 'test3', 'test4', '59036974417032658281testimonial3.png', 5, 1, '2024-03-04 19:11:01', '', 'c855490cca3c62647712b70accc1649160369495aa67ef5f2d5cb962a19dc4d6', 3),
 (40, '11910', 'Ijeoma23323', 'Peter', 'Ijeoma', NULL, NULL, 1, NULL, 'Female', 'Single', '+55-959-434-333', 'Ijeoma@gmail.com', NULL, NULL, NULL, NULL, 0, NULL, NULL, '96900264384358715127favicon.png', 5, 6, '2024-03-04 19:20:53', '', NULL, NULL),
@@ -1396,7 +1409,7 @@ ALTER TABLE `account_list`
 -- AUTO_INCREMENT for table `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `asset`
@@ -1468,7 +1481,7 @@ ALTER TABLE `hmo_lab_group`
 -- AUTO_INCREMENT for table `hmo_payment_requests`
 --
 ALTER TABLE `hmo_payment_requests`
-  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
+  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
 
 --
 -- AUTO_INCREMENT for table `hmo_pharmacy_group`
@@ -1492,7 +1505,7 @@ ALTER TABLE `hmo_radio_group`
 -- AUTO_INCREMENT for table `hmo_request_window`
 --
 ALTER TABLE `hmo_request_window`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `hmo_specialist_group`
